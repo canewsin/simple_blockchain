@@ -1,0 +1,15 @@
+[package]
+name = "simple_blockchain"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4"
+sha2 = "0.10"
+randomx-rs ={ path = "../randomx-rs"}
+
+[features]
+default = ["randomx", "reproduce_blocks", "benchmark"]
+reproduce_blocks = []
+randomx = []
+benchmark = []
